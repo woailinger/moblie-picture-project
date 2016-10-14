@@ -1,0 +1,37 @@
+/* 大图页的样式文件 */
+.layer{
+	position:fixed;
+	top:0;
+	left:0;
+	right: 0;
+	bottom: 0;
+	background: black;
+}
+.layer .layer-container{
+	position:absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	text-align: center;
+}
+.layer .layer-container img{
+	max-height: 100%;
+	max-width : 100%;
+	vertical-align:middle;
+		/* display: block; */
+	/* line-height:100%; */
+
+}
+.layer .header{
+	background: #000;
+}
+.layer .header.hide{
+	display: none;
+}
+.layer .header .arrow-container .arrow.black{
+	border-right:20px solid #000;
+	position: absolute;
+	left: -14px;
+    top: -20px;
+}

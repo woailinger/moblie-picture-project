@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, width=device-width">
+	<title>相册</title>
+</head>
+<body>
+
+<!-- 定义页面容器元素 -->
+<div id="app">
+	<section class="list">
+		<header class="header">
+			<!-- <div class="arrow-container">
+				<span class="arrwo"><span class="arrow green"></span></span>
+			</div> -->
+			<div class="login">登陆</div>
+			<h1>男人的天堂</h1>
+		</header>
+		<div class="search">
+			<input type="text" placeholder="搜索你想要的美女">
+			<span>搜一搜</span>
+		</div>
+		<ul class="nav clearfix">
+			<li data-id="0">丝袜美女</li>
+			<li data-id="1">爆乳美女</li>
+			<li data-id="2">制服美女</li>
+			<li data-id="3">性感美女</li>
+		</ul>
+		<div class="image-container">
+			<div class="left-container">
+			</div>
+			<div class="right-container">
+			</div>
+		</div>
+		<div class="go-back">返回顶部</div>
+	</section>
+	
+	<section class="layer"></section>
+</div>
+<!-- 定义大图页的模板 -->
+<script type="text/template" id="tpl_layer">
+	<div class="layer-container" style="<%=style%>"><img src="<%=url%>" alt=""></div>
+	<header class="header hide">
+		<div class="arrow-container">
+			<span class="arrow arrow-btn"><span class="arrow black"></span></span>
+		</div>
+		<h1><%=title%></h1>
+	</header>
+</script>
+
+<script type="text/javascript" src="static/sea.js"></script>
+<script type="text/javascript" src="static/lib/seajs-css.js"></script>
+<script type="text/javascript" src="static/lib/zepto.js"></script>
+<script type="text/javascript" src="static/lib/zepto.touch.js"></script>
+<script type="text/javascript" src="static/lib/underscore.js"></script>
+<script type="text/javascript" src="static/lib/backbone.js"></script>
+<script type="text/javascript">
+	seajs.use('app', function (app) {
+		app();
+		//哈哈
+	})
+</script>
+</body>
+</html>
